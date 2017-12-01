@@ -5,7 +5,7 @@
 <body>
 
     <div th:replace="fragments :: page-header"></div>
-
+    <p th:text=" ${count}"> Result(s)</p>
     <div class="container body-content">
         <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
         <h2>View All</h2>
