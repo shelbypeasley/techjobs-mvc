@@ -32,7 +32,7 @@ public class SearchController {
                int count = jobs.size();
                model.addAttribute("columns", ListController.columnChoices);
                model.addAttribute("jobs", jobs);
-               model.addAttribute("count", count);
+               model.addAttribute("count", count + " Result(s)");
                return "search";
            }
 

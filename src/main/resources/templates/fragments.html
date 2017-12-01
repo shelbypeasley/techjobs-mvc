@@ -32,6 +32,8 @@
             <p>no results</p>
         </div>
 
+        <p th:text=" ${count}"> Result(s)</p>
+
         <div>
             <table class = "job-listing" th:each ="job : ${jobs}">
                 <tr th:each ="j : ${job}">
